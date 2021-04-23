@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
 "http://www.w3.org/TR/html4/loose.dtd"> 
 
@@ -179,91 +178,91 @@
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 					</div>
 					<div class="modal-body">
-						<form:form id="addEmployeeForm" method="POST" action="/" modelAttribute="employee">
-							<form:hidden path="id" />
+						<form id="addEmployeeForm" method="POST" action="/" modelAttribute="employee">
+							
 							<div class="row">
 								<div class="col-md-6 form-group">
-									<form:label for="first_name" path="first_name">First Name</form:label>
-									<form:input type="text" path="first_name"  name="first_name" id="first_name" class="form-control" required/>
+									<label for="first_name">First Name</label>
+									<input type="text"  name="first_name" id="first_name" class="form-control" required/>
 								</div>
 
 								<div class="col-md-6 form-group">
-									<form:label for="last_name" path="last_name">Last Name</form:label>
-									<form:input type="text" name="last_name" path="last_name" id="last_name" class="form-control" required/>
+									<label for="last_name">Last Name</form:label>
+									<input type="text" name="last_name" id="last_name" class="form-control" required/>
 								</div>
 							</div>
 
 							<div class="row">
 								<div class="col-md-12 form-group">
-									<form:label path="address" for="address">Address</form:label>
-									<form:input type="text" path="address" name="address" id="address" class="form-control" required/>
+									<label for="address">Address</label>
+									<input type="text" name="address" id="address" class="form-control" required/>
 								</div>
 							</div>
 
 							<div class="row">
 								<div class="col-md-6 form-group">
-									<form:label for="gender" path="gender">Gender</form:label>
-									<form:select path="gender" class="form-control" required>
+									<label for="gender">Gender</label>
+									<select class="form-control" required>
 										<option>Male</option>
 										<option>Female</option>
-									</form:select>
+									</select>
 								</div>
 
 								<div class="col-md-6 form-group">
-									<form:label path="bgroup" for="bgroup">Blood Group</form:label>
-									<form:input type="text" path="bgroup" name="bgroup" id="bgroup" class="form-control" required/>
+									<label for="bgroup">Blood Group</label>
+									<input type="text" name="bgroup" id="bgroup" class="form-control" required/>
 								</div>
 							</div>
 
 							<div class="row">
 								<div class="col-md-12 form-group">
-									<form:label path="dob" for="dob">Date of Birth</form:label>
-									<form:input type="date" path="dob" name="dob" id="dob" class="form-control" required/>
+									<label for="dob">Date of Birth</label>
+									<input type="date" name="dob" id="dob" class="form-control" required/>
 								</div>
 							</div>
 
 							<div class="row">
 								<div class="col-md-12 form-group">
-									<form:label path="emp_id" for="emp_id">Employee ID</form:label>
-									<form:input type="text" path="emp_id" name="emp_id" id="emp_id" class="form-control" required/>
+									<label for="emp_id">Employee ID</label>
+									<input type="text" name="emp_id" id="emp_id" class="form-control" required/>
 								</div>
 							</div>
 
 							<div class="row">
 								<div class="col-md-6 form-group">
-									<form:label path="start_date" for="start_date">Start Date</form:label>
-									<form:input type="date" path="start_date" name="start_date" id="start_date" class="form-control" required/>
+									<label for="start_date">Start Date</label>
+									<input type="date" name="start_date" id="start_date" class="form-control" required/>
 								</div>
 
 								<div class="col-md-6 form-group">
-									<form:label path="end_date" for="end_date">End Date</form:label>
-									<form:input type="date" path="end_date" name="end_date" id="end_date" class="form-control" required/>
+									<label for="end_date">End Date</label>
+									<input type="date" name="end_date" id="end_date" class="form-control" required/>
 								</div>
 							</div>
 
 							<div class="row">
 								<div class="col-md-6 form-group">
-									<form:label path="designation" for="designation">Designation</form:label>
-									<form:input type="text" path="designation" name="designation" id="designation" class="form-control" required/>
+									<label for="designation">Designation</label>
+									<input type="text" name="designation" id="designation" class="form-control" required/>
 								</div>
 
 								<div class="col-md-6 form-group">
-									<form:label path="department" for="department">Department</form:label>
-									<form:input type="text" path="department" name="department" id="department" class="form-control" required/>
-								</div>
-							</div>
-
-							<div class="row">
-								<div class="col-md-12 form-group">
-									<form:label path="reporting_manager" for="reporting_manager">Reporting Manager</form:label>
-									<form:input type="text" path="reporting_manager" name="reporting_manager" id="reporting_manager" class="form-control" required/>
+									<label for="department">Department</label>
+									<input type="text" name="department" id="department" class="form-control" required/>
 								</div>
 							</div>
 
 							<div class="row">
 								<div class="col-md-12 form-group">
-									<form:label for="status" path="status">Status</form:label>
-									<form:input type="text" path="status" name="status" id="status" class="form-control" required/>
+									<label for="reporting_manager">Reporting Manager</label>
+									<input type="text" name="reporting_manager" id="reporting_manager" class="form-control" required/>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-12 form-group">
+									<label for="status">Status</label>
+									<input type="text" name="status" id="status" class="form-control" required/>
 								</div>
 							</div>
 						</form:form>
